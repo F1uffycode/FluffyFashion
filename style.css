@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+/* img {
+    display: inline-block;
+} */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-list a {
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+  border: 2px solid transparent; /* резервируем место */
+  transition: border-color 0.3s;
+}
+
+.nav-list a:hover {
+    border-color: gray; 
+    text-decoration: none;
+}
+
+.main-logo {
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 400;
+}
+
+.explore {
+    padding-right: 15rem;
+    padding-left: 15rem;
+    margin-bottom: 10rem;
+}
+
+.explore-text h1{
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: bolder;
+}
+
+.explore-text p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+
+.explore-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F6F5;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+}
+
+.explore-img {
+    border-radius: 50px;
+    height: 550px;
+    width: 550px;
+}
+
+
+
+.highlight {
+    display: inline-block;
+    background-color: #f3e96f; 
+    transform: rotate(-5deg); 
+    padding: 0 5px; 
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: bolder;
+}
+
+
+.highlight:first-child {
+    display: inline-block;
+    background-color: #FFFFFF; 
+    transform: rotate(-1deg); 
+    padding: 0 5px; 
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: bolder;
+}
+
+.brand-list {
+    background-color: #F4F6F5;
+    padding: 2rem 2rem;
+}
+
+.brand-lnk img {
+    height: 100px;
+    width: 100px;
+}
+
+.brand-lnk:first-child img {
+    height: 60px;
+    width: 120px;
+}
+
+.brand-lnk:nth-child(2) img {
+    height: 60px;
+    width: 120px;
+}
+
+.brand-lnk:nth-child(3) img {
+    height: 70px;
+    width: 130px;
+}
+
+.brand-lnk:nth-child(4) img {
+    height: 60px;
+    width: 140px;
+}
+
+.brand-lnk:nth-child(5) img {
+    height: 50px;
+    width: 130px;
+}
+
+.brand-lnk:nth-child(6) img {
+    height: 75px;
+    width: 75px;
+}
+
+
+.arrivals {
+    padding-right: 15rem;
+    padding-left: 15rem;
+}
+
+.new-arrivals row {
+    padding: 0;
+    margin: 0;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.arrivals h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 5rem;
+    color: black;
+}
+
+h2 span {
+    display: inline-block;
+    background-color: #f3e96f; 
+    transform: rotate(-2deg); 
+    padding: 0 5px; 
+    font-size: 2.3rem;
+    line-height: 1.2;
+    font-weight: bolder;
+}
+
+
+.arrivals-img {
+    height: 550px;
+    transition: 0.3s ease;
+}
+
+.arrivals-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.card-title {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-title span {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+.footer {
+    background-color: #F4F6F5;
+}
+
+
+
+
+@media screen and (max-width: 1700px) {
+    .explore {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+
+    .arrivals {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    .explore {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    .arrivals {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    .explore-text h1{
+        font-size: 4rem;
+    }
+
+    .highlight {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .explore-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .shop-now {
+        margin-bottom: 2rem;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .navigation button {
+        display: none;
+    }
+
+    .explore {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .explore-text h1{
+        font-size: 3rem;
+    }
+
+    .highlight {
+        font-size: 3rem;
+    }
+
+    .explore-img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .brand-list {
+        height: 1000px;
+        gap: 2rem;
+    }
+
+    .arrivals-card img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .arrivals-card img {
+        height: 250px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+
+    .arrivals span {
+        font-size: 1.5rem;
+    }
+
+    .main-logo {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
